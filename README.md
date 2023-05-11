@@ -27,18 +27,14 @@ RegisterNumber:  212221040113
 ```
 import pandas as pd
 data=pd.read_csv('/content/Placement_Data (1).csv')
-print("Placement data")
 data.head()
 
 data1=data.copy()
 data1=data1.drop(["sl_no","salary"],axis=1)
-print("Salary data")
 data1.head()
 
-print("Checking the null() function")
 data1.isnull().sum()
 
-print("Data Duplicate")
 data1.duplicated().sum()
 
 from sklearn.preprocessing import LabelEncoder
@@ -51,15 +47,12 @@ data1["degree_t"]=le.fit_transform(data1["degree_t"])
 data1["workex"]=le.fit_transform(data1["workex"])
 data1["specialisation"]=le.fit_transform(data1["specialisation"])
 data1["status"]=le.fit_transform(data1["status"])
-print("Print data")
 data1
 
 x=data1.iloc[:,:-1]
-print("Data-status")
 x
 
 y=data1["status"]
-print("data-status")
 y
 
 
@@ -70,25 +63,20 @@ from sklearn.linear_model import LogisticRegression
 lr=LogisticRegression(solver="liblinear")
 lr.fit(x_train,y_train)
 y_pred=lr.predict(x_test)
-print("y_prediction array")
 y_pred
 
 from sklearn.metrics import accuracy_score
 accuracy=accuracy_score(y_test,y_pred)
-print("Accuracy value")
 accuracy
 
 from sklearn.metrics import confusion_matrix
 confusion = confusion_matrix(y_test,y_pred)
-print("Confusion array")
 confusion
 
 from sklearn.metrics import classification_report
 classification_report1 = classification_report(y_test,y_pred)
-print("Classification report")
 print(classification_report1)
 
-print("Prediction of LR")
 lr.predict([[1,80,1,90,1,1,90,1,0,85,1,85]])
 ```
 ## Output:
