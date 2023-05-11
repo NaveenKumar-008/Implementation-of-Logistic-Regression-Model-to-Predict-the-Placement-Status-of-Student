@@ -81,18 +81,7 @@ lr.predict([[1,80,1,90,1,1,90,1,0,85,1,85]])
 ```
 ## Output:
 
-![the Logistic Regression Model to Predict the Placement Status of Student](1.png)
-![the Logistic Regression Model to Predict the Placement Status of Student](2.png)
-![the Logistic Regression Model to Predict the Placement Status of Student](3.png)
-![the Logistic Regression Model to Predict the Placement Status of Student](4.png)
-![the Logistic Regression Model to Predict the Placement Status of Student](5.png)
-![the Logistic Regression Model to Predict the Placement Status of Student](6.png)
-![the Logistic Regression Model to Predict the Placement Status of Student](7.png)
-![the Logistic Regression Model to Predict the Placement Status of Student](8.png)
-![the Logistic Regression Model to Predict the Placement Status of Student](9.png)
-![the Logistic Regression Model to Predict the Placement Status of Student](10.png)
-![the Logistic Regression Model to Predict the Placement Status of Student](11.png)
-![the Logistic Regression Model to Predict the Placement Status of Student](12.png)
+
 
 ## Result:
 Thus the program to implement the the Logistic Regression Model to Predict the Placement Status of Student is written and verified using python programming.
